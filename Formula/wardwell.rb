@@ -5,12 +5,9 @@ class Wardwell < Formula
   license "Apache-2.0"
 
   on_macos do
-    if Hardware::CPU.arm?
+    on_arm do
       url "https://github.com/yakschuss/wardwell/releases/download/v#{version}/wardwell-aarch64-apple-darwin.tar.gz"
       sha256 "309509ca6b62a62b563e0f9cef60ae842a4be0dec7787a030910bb1028825846"
-    else
-      url "https://github.com/yakschuss/wardwell/releases/download/v#{version}/wardwell-x86_64-apple-darwin.tar.gz"
-      sha256 "6ee7ebe24c8ce4f3d24165c6825f4347d574efaa8a692fe30e9dcb83db7c18e0"
     end
   end
 
