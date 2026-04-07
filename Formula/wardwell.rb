@@ -1,13 +1,13 @@
 class Wardwell < Formula
   desc "Persistent project memory for Claude Code — MCP server + CLI"
   homepage "https://wardwell.dev"
-  version "0.6.2"
+  version "0.6.3"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/yakschuss/wardwell/releases/download/v#{version}/wardwell-aarch64-apple-darwin.tar.gz"
-      sha256 "e540e090521d7b6834a6f0244c662be05495328ab966fd8244fba9af3d1bf30a"
+      sha256 "4f7a7aeb8722d6971e9db1e35d9023795d371d3a867155720be0a98afe5b5351"
     else
       url "https://github.com/yakschuss/wardwell/releases/download/v#{version}/wardwell-x86_64-apple-darwin.tar.gz"
       sha256 ""
@@ -16,7 +16,7 @@ class Wardwell < Formula
 
   on_linux do
     url "https://github.com/yakschuss/wardwell/releases/download/v#{version}/wardwell-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "8f0de5487a4687bb39ee64988aab1b052107fb57837834ae08995dbe8a3e71a4"
+    sha256 "868a734266a1e4373ea109ce1baad8ab8355d2904a3edec06bfc283bb707e13f"
   end
 
   def install
