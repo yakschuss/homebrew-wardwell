@@ -7,7 +7,7 @@ class Wardwell < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/yakschuss/wardwell/releases/download/v#{version}/wardwell-aarch64-apple-darwin.tar.gz"
-      sha256 "498e9781e85ebc0a861d36a107a59d41e044af9856e1020cff1f6129e20b2714"
+      sha256 "937ac6438c21ef724c203e8e27abcb14975d9dc367f80201bd27fc4c7d60c048"
     else
       url "https://github.com/yakschuss/wardwell/releases/download/v#{version}/wardwell-x86_64-apple-darwin.tar.gz"
       sha256 ""
@@ -16,7 +16,7 @@ class Wardwell < Formula
 
   on_linux do
     url "https://github.com/yakschuss/wardwell/releases/download/v#{version}/wardwell-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "5e1754476ce86d121fac322456c04ee1e00382e16acec1ba7c17763705221498"
+    sha256 "bab7c3b363f4d23c3910b61acfed4e1ae4bbb5092289d41c55903b5e6406f4ac"
   end
 
   def install
